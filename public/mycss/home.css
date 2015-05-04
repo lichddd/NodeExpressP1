@@ -1,0 +1,22 @@
+.homenavbottom:hover
+{
+	opacity: 1;
+}
+.homenavbottom
+{
+	
+opacity: 0;
+	/*transition-delay:0.5;*/
+transition:1s;
+transition:all;
+    
+-moz-transition-duration:1s;
+-moz-transition-property:all;
+-webkit-transition-duration:1s;
+-webkit-transition-property:all;
+-o-transition-duration:1s;
+-o-transition-property:all;
+}
+
+
+

@@ -1,0 +1,60 @@
+*
+{
+
+}
+
+.all
+{
+	width: 960px;
+	margin: auto;
+	border: 1px solid gray;
+}
+.tab
+{
+	width: 960px;
+	height: 30px;
+	margin: auto;
+	background-color: rgba(50,50,50,0.5);
+
+}
+.continer
+{
+	height: 200px;
+	position: relative;
+}
+.continer div
+{
+	position: absolute;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+ul
+{
+	list-style-type: none;
+	margin: 0px;
+	width: 960px;
+	height: 30px;
+	padding: 0px;
+}
+ul li
+{
+	width: 16%;
+	float: left;
+	/*margin: 10px;*/
+	color:coral;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;;
+}
+ul li:hover
+{
+	
+	color:chocolate;
+
+}
+.selectLi
+{
+	text-shadow: 0px 0px 10px;
+}
+

@@ -1,11 +1,36 @@
-<!DOCTYPE html>
+
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title><%= title %></title>
+  <script type="text/javascript" src="/js/jquery.min.js" ></script>
+  <script type="text/javascript" src="/js/MyTab.js" ></script>
+  <link rel="stylesheet" href="/css/MyTab.css" />
+</head>
+<body>
+<div class="all">
+  <div class="tab">
+    <ul>
+      <li target="av">AV</li>
+      <li target="gv">GV</li>
+      <li target="sm">SM</li>
+      <li target="xm">小马</li>
+      <li target="qt">其他</li>
+      <li target="gy">关于</li>
+    </ul>
+
+  </div>
+  <div class="continer">
+    <div id="av">av</div>
+    <div id="gv">gv</div>
+    <div id="sm">sn</div>
+    <div id="xm">小马</div>
+    <div id="qt">其他</div>
+    <div id="gy">关于</div>
+
+  </div>
+
+</div>
+
+</body>
 </html>

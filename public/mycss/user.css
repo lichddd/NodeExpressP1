@@ -1,0 +1,86 @@
+body
+{
+	padding: 100px;
+}
+
+.userlistitem
+{
+
+transform: scale(1.1);	
+-moz-transform: scale(1.1);	
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);	
+
+transition-duration:0.5s;
+transition-property:all;
+    
+-moz-transition-duration:0.5s;
+-moz-transition-property:all;
+
+
+
+-webkit-transition-duration:0.5s;
+-webkit-transition-property:all;
+-o-transition-duration:0.5s;
+-o-transition-property:all;
+	
+}
+
+.userlistitemafter
+{
+
+transform: scale(1);	
+-moz-transform: scale(1);	
+-webkit-transform: scale(1);
+-o-transform: scale(1);	
+
+	
+}
+.userlistitem:hover
+{
+
+transform: scale(1.05);	
+-moz-transform: scale(1.05);	
+-webkit-transform: scale(1.05);	
+-o-transform: scale(1.05);	
+z-index:9999;
+-moz-z-index:9999;
+-webkit-z-index:9999;
+-o-z-index:9999;
+	
+}
+.userlistitemafter:hover
+{
+
+transform: scale(1.05);	
+-moz-transform: scale(1.05);	
+-webkit-transform: scale(1.05);	
+-o-transform: scale(1.05);	
+z-index:9999;
+-moz-z-index:9999;
+-webkit-z-index:9999;
+-o-z-index:9999;
+	
+}
+.deleteSpan
+{
+transition-duration:0.5s;
+transition-property:all;
+    
+-moz-transition-duration:0.5s;
+-moz-transition-property:all;
+
+
+
+-webkit-transition-duration:0.5s;
+-webkit-transition-property:all;
+-o-transition-duration:0.5s;
+-o-transition-property:all;
+float:right;
+font-size:32px
+}
+.deleteSpan:hover
+{
+
+color: red;
+}

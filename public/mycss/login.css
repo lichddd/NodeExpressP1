@@ -1,0 +1,29 @@
+.form-signin
+{
+	max-width: 350px;
+	margin: auto;
+	padding: 15px;
+}
+
+.mar5css
+{
+	margin: 5px;
+}
+
+#loginform
+{
+	transition-duration:1s;
+transition-property:all;
+    
+-moz-transition-duration:1s;
+-moz-transition-property:all;
+
+
+
+-webkit-transition-duration:1s;
+-webkit-transition-property:all;
+-o-transition-duration:1s;
+-o-transition-property:all;
+	
+}
+    
