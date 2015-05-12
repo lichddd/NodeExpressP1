@@ -1,16 +1,10 @@
+
+
+
 $().ready(function()
 {
-var re = /True/g;
-var re2 = /Flase/g;
-var ss = '';
-ss= $().getElementsByClassName('trueORfalse');
-for (var i = 0; i < ss.length; i++) {
-	ss[i].html(ss[i].html().replace(re,'是'));
-	ss[i].html(ss[i].html().replace(re2,'否'));
-}
-$('.trueORfalse').html(ss.replace(re,'是'));
 
-//
+console.log(title);
 //$.fn.bootstrapSwitch.defaults.size='mini';
 //$("[name='my-checkbox']").bootstrapSwitch();
 
