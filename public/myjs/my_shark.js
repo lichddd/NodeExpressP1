@@ -1,4 +1,7 @@
-var My_Shark = function(){
+
+
+(function ($) {
+	var My_Shark = function(){
     function hi(){//私有函数，外部无法访问  
         alert(name + " : Hi!");//私有变量，内部可以直接访问  
     }  
@@ -26,4 +29,19 @@ var My_Shark = function(){
     
 };  
   
-var _my_shark=new My_Shark();
+
+$.my_shark=new My_Shark();
+$.fn.shark=function() {
+		this.removeClass("shark");
+		var t=this;
+		var st =setTimeout(function () {
+		t.addClass("shark");
+	},10);
+				
+		var st2 =setTimeout(function () {
+		t.removeClass("shark");
+		
+	},1250);
+		};
+
+})(jQuery)

@@ -6,10 +6,12 @@ $().ready(function () {
 //	$("#my_alert").modal();
 
 
-})
+});
 
 
-var My_Alert = function(){  
+
+(function ($) {
+	var My_Alert = function(){  
     function hi(){//私有函数，外部无法访问  
         alert(name + " : Hi!");//私有变量，内部可以直接访问  
     }  
@@ -55,7 +57,10 @@ var My_Alert = function(){
     }  
 };  
   
-var _my_alert = new My_Alert();  
+$.my_alert= new My_Alert();  
+
+})(jQuery)
+
 
 
 

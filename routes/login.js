@@ -30,50 +30,51 @@ router.post('/ajax_login', function(req, res){
 
 
 
-    // do the POST call
-    // 服务器端发送REST请求
-    var reqPost = http.request(optionspost, function(resPost) {
-        var body='';
-        resPost.on('data', function (data) { console.log(data);body += data; })
-            .on('end', function () {
-                console.log(JSON.parse(body));
-                JSON.parse(body);
-                //res.send(200, body);
-                res.json(JSON.parse(body));
-            });
-        //console.log(d);
-        //    res.json(d);
-            //res.send(d);
-        //});
-    });
-    reqPost.write(data+'\n');
-
-    reqPost.end();
-
-    reqPost.on('error', function(e) {
-        console.error(e);
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //if(req.body[0].username=='1')
-    //{
-    //    res.json([{ res: '1' }]);
-    //}
-    //else
-    //{
+    //// do the POST call
+    //// 服务器端发送REST请求
+    //var reqPost = http.request(optionspost, function(resPost) {
+    //    var body='';
+    //    resPost.on('data', function (data) { console.log(data);body += data; })
+    //        .on('end', function () {
+    //            console.log(JSON.parse(body));
+    //            JSON.parse(body);
+    //            //res.send(200, body);
+    //            res.json(JSON.parse(body));
+    //        });
+    //    //console.log(d);
+    //    //    res.json(d);
+    //        //res.send(d);
+    //    //});
+    //});
+    //reqPost.write(data+'\n');
+    //
+    //reqPost.end();
+    //
+    //reqPost.on('error', function(e) {
+    //    console.error(e);
     //    res.json([{ res: '0' }]);
-    //}
+    //});
+
+
+
+
+
+
+
+
+
+
+
+
+
+    if(req.body[0].username=='1')
+    {
+        res.json([{ res: '1' }]);
+    }
+    else
+    {
+        res.json([{ res: '0' }]);
+    }
 
 
 

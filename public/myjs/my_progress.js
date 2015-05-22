@@ -5,10 +5,10 @@ $().ready(function () {
 //	$("#my_alert").modal();
 
 
-})
+});
 
-
-var My_Progress = function(){
+(function ($) {
+	var My_Progress = function(){
     function hi(){//私有函数，外部无法访问  
         alert(name + " : Hi!");//私有变量，内部可以直接访问  
     }  
@@ -33,4 +33,12 @@ var My_Progress = function(){
     
 };  
   
-var _my_progress=new My_Progress();
+$.my_progress=new My_Progress();
+	
+	
+	
+	
+	
+	
+	
+})(jQuery)

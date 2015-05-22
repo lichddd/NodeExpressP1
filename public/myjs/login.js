@@ -60,10 +60,11 @@ function loginSuss(a,b,c)
 //	var jo=JSON.parse(a);
 	$.each(a, function(i,item) {    
 		if (item.res==0) {
-			_my_alert.showAlert("登录失败,用户名或密码错误");
+			$.my_alert.showAlert("登录失败,用户名或密码错误");
 			$("#loginbtn").removeAttr("disabled");
 			$("#loginbtn").text("登录");
-			_my_shark.shark($("#loginform"));
+//			$.my_shark.shark($("#loginform"));
+			$("#loginform").shark('');
 		}
 		else
 		{
